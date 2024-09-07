@@ -61,7 +61,7 @@ namespace Hospital.Web.Controllers
                     patient.Address,
                     patient.Sex,
                     patient.BirthDate,
-                    patient.Area.Number
+                    patient.Area != null ? patient.Area.Number : null
                 ));
 
             return Ok(result);
